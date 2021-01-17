@@ -9,11 +9,12 @@ $(window).on("scroll", function() {
     /*===== TYPING AREA ===== */
 $(document).ready(function() {
     var typed = new Typed(".typing", {
-        strings: ["Prazer em Servir!", "Soluções Inovadoras", "Para a sua <font color='#0698e4'>Empresa</font>"],
+        strings: ["Prazer em Servir!", "Soluções Inovadoras", "Para a sua Empresa"],
         typeSpeed: 70,
         backSpeed: 35,
         loop: true
     });
+
 });
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*===== SCROLL REVEAL ANIMATION =====*/
@@ -37,12 +38,11 @@ sr.reveal('.about__text', { delay: 400 });
 
 /*SCROLL SERVICES*/
 sr.reveal('.card', {});
-sr.reveal('', {});
 sr.reveal('.btn2', { interval: 200 });
-sr.reveal('', { delay: 600 });
 
-/*SCROLL WORK*/
-sr.reveal('.work__img', { interval: 200 });
+/*SCROLL NEWSLETTER*/
+//sr.reveal('.news', { delay: 200 });
+sr.reveal('.newsletter', { delay: 250 });
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input', { interval: 200 });
@@ -53,4 +53,15 @@ $("#abrir").click(function() {
 });
 $("#btn-3").click(function() {
     $(".container").toggle().css("display", "none");
+});
+//=====================================================================   
+//============ Our Partners ==============
+$('.logo-slider').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true
 });

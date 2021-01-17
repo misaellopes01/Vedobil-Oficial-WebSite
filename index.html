@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 </head>
 
 <body>
+    <!--=============================== HEADER ================================-->
     <header>
         <a href="#"><img src="assets/css/img/about12.png" alt="Vedobil"></a>
         <nav>
@@ -31,6 +35,7 @@
             </ul>
         </nav>
     </header>
+    <!--=============================== BANNER ================================-->
     <section class="banner-area">
         <div class="banner-img"></div>
         <h1 class="h1-class">Vedobil</h1>
@@ -39,6 +44,7 @@
             <a href="#contact" class="banner-btn">Contactar</a>
         </div>
     </section>
+    <!--=============================== ABOUT ================================-->
     <section class="about-area" id="about">
         <h3 class="section-title">SOBRE NÓS</h3>
         <ul class="about-content">
@@ -52,8 +58,11 @@
             </li>
         </ul>
     </section>
+    <!--=============================== SERVICES ================================-->
     <section class="services-area" id="services">
         <h3 class="section-title">Nossos Serviços</h3>
+        <p class="desc1">Deslize sobre a imagem para ver a descrição</p>
+        <p class="desc2">Clique em uma imagem para ver a descrição</p>
         <ul class="services-content services">
             <li>
                 <div class="card">
@@ -162,7 +171,7 @@
         <div class="container" id="container">
             <div class="contact-box">
                 <div class="left"></div>
-                <div class="right">
+                <form class="right">
                     <h2>Solicitar serviço</h2>
                     <input type="text" class="field" placeholder="Nome de sua empresa">
                     <input type="text" class="field" placeholder="Localização">
@@ -178,22 +187,120 @@
                     <textarea placeholder="Detalhe o serviço desejado" class="field"></textarea>
                     <input type="button" value="fechar" class="btn3" id="btn-3">
                     <input type="button" value="enviar" class="btn">
-                </div>
+                </form>
             </div>
         </div>
     </section>
+    <!--=============================== NEWSLETTER ================================-->
+    <section class="news" id="news">
+        <div class="newsletter">
+            <form action="">
+                <h3>Junte-se ao nosso Newsletter!</h3>
+                <p>E receba atualizacoes sobre servicos, promocoes e mais.</p>
+                <div class="email-box">
+                    <i class="fas fa-envelope"></i>
+                    <input class="tbox1" type="text" name="" value="" placeholder="Nome">
+                    <input class="tbox" type="email" name="" value="" placeholder="email">
+                    <button class="btn4" type="button" name="button">INSCREVER</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="parceiros" id="parceiros">
+        <h3>Nossos Parceiros</h3>
+        <div class="logo-slider logo-css">
+            <!-- Logo size: 400x200-->
+            <div class="item">
+                <a href=""><img src="assets/css/partners/adidas.png" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="assets/css/partners/facebook.png" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="assets/css/partners/google.png" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="assets/css/partners/instagram.png" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="assets/css/partners/nike.png" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="assets/css/partners/twitter.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-area">
+        <div class="footer-wave-box">
+            <div class="footer-wave footer-animation"></div>
+        </div>
+        <div class="main">
+            <div class="footer">
+                <div class="single-footer">
+                    <h4 class="quatro">Visita-nos!</h4>
+                    <p class="parag">Estamos também nas redes sociais. Siga-nos nas nossas redes e fique ligado, poderá ver as nossas publicações, e também falar conosco por lá, se quiser.
+                        <font color="#0698e4"> O nosso prazer está em servir os nossos clientes</font>
+                    </p>
 
+                    <div class="social__container">
+                        <div class="social__content hv1">
+                            <i class='bx bxl-facebook-circle social__icon'></i>
+                            <a href="" class="social__tooltip social__tooltip-left">Facebook</a>
+                        </div>
 
+                        <div class="social__content hv2">
+                            <i class='bx bxl-instagram-alt social__icon'></i>
+                            <a href="" class="social__tooltip social__tooltip-top">Instagram</a>
+                        </div>
 
+                        <div class="social__content hv3">
+                            <i class='bx bxl-linkedin-square social__icon'></i>
+                            <a href="" class="social__tooltip social__tooltip-right">LinkedIn</a>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="single-footer">
+                    <h4>Links Principais</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Sobre nós</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> serviços</a></li>
+                        <li><a href="#news"><i class="fas fa-chevron-right"></i> newsletter</a></li>
+                        <li><a href="#parceiros"><i class="fas fa-chevron-right"></i> parceiros</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer" id="contact">
+                    <h4>Contactar-nos</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i> North Street, Sydney, Australia</a></li>
+                        <li><a href=""><i class="fas fa-mobile-alt"></i> +88 0123 456 789</a></li>
+                        <li><a href=""><i class="far fa-envelope"></i> info@demo.com</a></li>
+                        <li><a href=""><i class="fas fa-globe-europe"></i> www.demo.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Vedobil &copy; 2020 Todos direitos reservados</p>
+            </div>
+        </div>
+    </footer>
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/aos.js"></script>
-
 </body>
 
 </html>
