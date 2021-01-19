@@ -176,6 +176,50 @@
         <div class="container" id="container">
             <div class="contact-box">
                 <div class="left"></div>
+                <!--PHP CODE-->
+
+                <?php
+    include('config/database.php');
+
+    if(!empty($_POST["send"])) {
+    $empresa = $_POST["empresa"];
+    $localizacao = $_POST["localizacao"];
+    $email = $_POST["email"];
+    $phone = $_POST["phone"];
+    $servico = $_POST["servico"];
+    $message = $_POST["message"];
+
+    // Recipient email
+    $toMail = "comercial@vedobil.com";
+    
+    // Build email header
+    $header = "From: " . $name . "<". $email .">\r\n";
+
+    // Send email
+    if(mail($toMail, $servico, $message, $header)) {
+
+        // Store contactor data in database
+        $sql = $connection->query("INSERT INTO contacts_list(empresa, localizacao, email, phone, servico, message, sent_date)
+        VALUES ('{$name}', '{$localizacao}', '{$email}', '{$phone}', '{$servico}', '{$message}', now())");
+
+        if(!$sql) {
+            die("MySQL query failed.");
+        } else {
+            $response = array(
+            "status" => "alert-success",
+            "message" => "Recebemos com sucesso o seu email. Em breve o contactaremos!"
+            );              
+        }
+    } else {
+        $response = array(
+            "status" => "alert-danger",
+            "message" => "Mensagem não enviada. Tente de novo!"
+        );
+    }
+    }  
+?>
+
+                <!--PHP CODE-->
                 <form action="" name="contactForm" method="POST" enctype="multipart/form-data" class="right">
                     <h2>Solicitar serviço</h2>
                     <input type="text" name="empresa" id="empresa" class="field" placeholder="Nome de sua empresa">

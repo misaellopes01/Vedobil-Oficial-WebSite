@@ -14,10 +14,22 @@ $(document).ready(function() {
         backSpeed: 35,
         loop: true
     });
+    var typed = new Typed(".sist", {
+        strings: ["<b>QUIANNI:</b> Software de Faturação e Gestão, capaz de gerir mais de 165 Negócios diferentes. CERTIFICADO PELA AGT (77/AGT/2019)",
+            "<b>XD Software:</b> Representa o novo patamar na evolução dos softwares de gestão, com mais de 30.000 Clientes. (Certificado pela AGT nº 73/AGT/2019) "
+        ],
+        typeSpeed: 45,
+        backSpeed: 0,
+        loop: true
+    });
 
 });
+
+
+
 /*-----------------------------------------------------------------------------------------------------------------------------*/
-/*===== SCROLL REVEAL ANIMATION =====*/
+
+/*= === = SCROLL REVEAL ANIMATION === == */
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
@@ -57,7 +69,7 @@ $("#btn-3").click(function() {
 //=====================================================================   
 //============ Our Partners ==============
 $('.logo-slider').slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     dots: true,
     arrows: true,
@@ -65,3 +77,4 @@ $('.logo-slider').slick({
     autoplaySpeed: 2000,
     infinite: true
 });
+//===============================
