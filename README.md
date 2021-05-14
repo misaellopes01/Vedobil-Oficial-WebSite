@@ -1,4 +1,4 @@
-<h1># Official <strong style="color: #b38bff;">VEDOBIL(Su), Lda</strong> Website Template / 2021</h1>
+<h1 style="color: #b38bff;"># Official <strong>VEDOBIL(Su), Lda</strong> Website Template / 2021</h1>
    <img src="https://user-images.githubusercontent.com/66078558/118264279-5ef01180-b4af-11eb-8ef9-ba06d632e5e6.png" alt="Home Page">
     
    <br>
