@@ -4,7 +4,7 @@
    <br>
    <br>
    <h2>Hosted on: https://www.vedobil.com</h2>
-   <h3> and: https://vedobilfinal.vercel.app/ </h3>
+   <h3> and template version: https://vedobilfinal.vercel.app/ </h3>
    <br>
    <h3>Developed with</h3>
     <ul>
